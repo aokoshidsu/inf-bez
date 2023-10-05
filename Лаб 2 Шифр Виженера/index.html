@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <title>Шифр Вижинера</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Шифр Вижинера</h1>
+        <p class="author">Выполнила: Князева Софья, группа: ПИ(д)-41</p>
+
+        <div class="conrainer">
+            <input type="radio" id="eng" name="lang" checked>
+            <label>Английский</label><br>
+            <input type="radio" id="rus" name="lang" >
+            <label>Русский</label><br>
+        </div>
+
+        <div class="inputs-container">
+            <br>
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="name" id="original-text" required />
+                <label for="name" class="form__label">Сообщение</label>
+            </div>
+            <br>
+
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="name" id='key' required />
+                <label for="name" class="form__label">Ключ</label>
+            </div>
+        </div>
+        <br>
+        <div class="buttons"></div>
+            <button onclick="encode()"> <span>Зашифровать!</span> </button>
+            <button onclick="decode()"> <span>Расшифровать!</span> </button>
+        </div>
+        <div id="cryptedtext">Здесь будет Ваш зашифрованный текст</div>
+    </div>
+</body>
+</html>
